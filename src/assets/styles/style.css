@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'NexaRustBlackShadow';
+  src: url('../fonts/nexa-rust-black-shadow.otf');
+}
+
+@font-face {
+  font-family: 'Milkshake';
+  src: url('../fonts/milkshake.ttf'), url('../fonts/milkshake.otf');
+}
+
+.hello {
+  color: chocolate;
+  font-family: 'NexaRustBlackShadow';
+  background: url('../img/clouds.jpg');
+}
