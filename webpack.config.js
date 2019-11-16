@@ -12,6 +12,7 @@ module.exports = {
       fonts: path.resolve(__dirname, 'src/assets/fonts'),
       img: path.resolve(__dirname, 'src/assets/img'),
       styles: path.resolve(__dirname, 'src/assets/styles'),
+      doggy: path.resolve(__dirname, 'src/components/doggy'),
     },
   },
   module: {
