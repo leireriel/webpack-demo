@@ -12,4 +12,7 @@
   color: chocolate;
   font-family: 'NexaRustBlackShadow';
   background: url('../img/clouds.jpg');
+  &:hover {
+    color: yellow;
+  }
 }
