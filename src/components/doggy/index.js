@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import 'styles/style.css';
+import 'styles/style.scss';
 import Icon from 'img/icon.jpg';
 import Data1 from 'data/data1.json';
 import Data2 from 'data/data2.xml';
