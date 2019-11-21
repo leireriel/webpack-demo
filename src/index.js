@@ -17,4 +17,4 @@ const component = () => {
 };
 
 document.body.appendChild(component());
-// document.body.appendChild(Doggy());
+document.body.appendChild(Doggy());
