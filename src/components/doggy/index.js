@@ -4,7 +4,7 @@ import Icon from 'img/icon.jpg';
 import Data1 from 'data/data1.json';
 import Data2 from 'data/data2.xml';
 
-const doggy = () => {
+const Doggy = () => {
   const element = document.createElement('div');
 
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
@@ -20,4 +20,4 @@ const doggy = () => {
   return element;
 };
 
-export default doggy;
+export default Doggy;

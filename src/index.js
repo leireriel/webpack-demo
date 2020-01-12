@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import Doggy from 'doggy';
+import Doggy from 'Doggy';
 import printMe from './print.js';
 
 const component = () => {
@@ -18,3 +18,11 @@ const component = () => {
 
 document.body.appendChild(component());
 document.body.appendChild(Doggy());
+
+console.log('modulopez', module);
+if (module.hot) {
+  module.hot.accept('./print.js', function() {
+    console.log('Accepting the updated printMe module!');
+    printMe();
+  });
+}
