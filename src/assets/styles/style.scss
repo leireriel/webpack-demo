@@ -8,11 +8,15 @@
   src: url('../fonts/milkshake.ttf'), url('../fonts/milkshake.otf');
 }
 
+body {
+  background-color: lightpink;
+}
+
 .hello {
   color: chocolate;
   font-family: 'NexaRustBlackShadow';
   background: url('../img/clouds.jpg');
   &:hover {
-    color: yellow;
+    color: fuchsia;
   }
 }
