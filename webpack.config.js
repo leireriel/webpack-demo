@@ -4,15 +4,16 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: { app: './src/index.js', print: './src/print.js' },
+  entry: { app: './src/index.js' },
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
+    hot: true,
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Output Management',
+      title: 'Hot Module Replacement',
     }),
   ],
   output: {
@@ -25,7 +26,7 @@ module.exports = {
       fonts: path.resolve(__dirname, 'src/assets/fonts'),
       img: path.resolve(__dirname, 'src/assets/img'),
       styles: path.resolve(__dirname, 'src/assets/styles'),
-      doggy: path.resolve(__dirname, 'src/components/doggy'),
+      Doggy: path.resolve(__dirname, 'src/components/Doggy'),
     },
   },
   module: {
