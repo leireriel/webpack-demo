@@ -13,7 +13,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Hot Module Replacement',
+      title: '🐭🧀Encuentra el ratón',
     }),
   ],
   output: {
@@ -26,7 +26,8 @@ module.exports = {
       fonts: path.resolve(__dirname, 'src/assets/fonts'),
       img: path.resolve(__dirname, 'src/assets/img'),
       styles: path.resolve(__dirname, 'src/assets/styles'),
-      Doggy: path.resolve(__dirname, 'src/components/Doggy'),
+      utils: path.resolve(__dirname, 'src/utils'),
+      components: path.resolve(__dirname, 'src/components'),
     },
   },
   module: {

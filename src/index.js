@@ -1,6 +1,7 @@
 import _ from 'lodash';
-import Doggy from 'Doggy';
-import printMe from './print.js';
+import Doggy from 'components/Doggy';
+import printMe from 'utils/print.js';
+import { cube } from 'utils/math.js';
 import 'styles/style.scss';
 
 const component = () => {
@@ -17,10 +18,23 @@ const component = () => {
   return element;
 };
 
-document.body.appendChild(Doggy());
+const anotherComponent = () => {
+  const element = document.createElement('pre');
 
-let element = component(); //When element changes, it produces a new appenchild
-document.body.appendChild(element);
+  element.innerHTML = ['Soy otro componente', '5 al cubo es ' + cube(5)].join(
+    '\n',
+  );
+
+  return element;
+};
+
+let componentUpdated = component(); //When element changes, it produces a new appenchild
+document.body.appendChild(componentUpdated);
+
+let anotherComponentUpdated = anotherComponent();
+document.body.appendChild(anotherComponentUpdated);
+
+document.body.appendChild(Doggy());
 
 if (module.hot) {
   module.hot.accept('./print.js', function() {
