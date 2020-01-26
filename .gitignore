@@ -46,10 +46,11 @@ dist/
 .sass-cache/
 *.css.map
 
-
 ### JS Sourcemaps ###
 *.js.map
 
-
-### Public folder
+### Public folder ###
 public
+
+### IntelliJ ###
+.idea/
