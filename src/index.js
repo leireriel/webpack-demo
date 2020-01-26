@@ -21,23 +21,23 @@ const component = () => {
 const anotherComponent = () => {
   const element = document.createElement('pre');
 
-  element.innerHTML = ['Soy otro componente', '5 al cubo es ' + cube(5)].join(
+  element.innerHTML = ['Soy otro componente', `5 al cubo es ${cube(5)}`].join(
     '\n',
   );
 
   return element;
 };
 
-let componentUpdated = component(); //When element changes, it produces a new appenchild
+const componentUpdated = component(); // When element changes, it produces a new appenchild
 document.body.appendChild(componentUpdated);
 
-let anotherComponentUpdated = anotherComponent();
+const anotherComponentUpdated = anotherComponent();
 document.body.appendChild(anotherComponentUpdated);
 
 document.body.appendChild(Doggy());
 
 if (module.hot) {
-  module.hot.accept('./print.js', function() {
+  module.hot.accept('./print.js', () => {
     console.log('modulopez 🐡:', 'Accepting the updated printMe module!');
     document.body.removeChild(element);
     element = component();
